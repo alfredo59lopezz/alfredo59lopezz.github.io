@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gestion de medicamentos en la farmacia Pedroso">
+    <meta name="kewwords" content="farmacia,medicamentos,gestion">
+    <title>Farmacia "Pedroso"</title>
+    <link rel="icon"
+        href="img\iconos/logoo.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+
+</head>
+
+<body>
+
+    <header id="header-home ">
+        <div class="div-logo">
+            <a href="index.html" class="logo"> <img src="img/logo/logo.jpg" alt="logo">
+        </div>
+        <h1 class="slogan">Farmacia "Pedroso"</h1>
+        </a>
+        <nav class="nav-home">
+            <ul>
+                <li class="nav-home-items" onclick="changePage('inicio')">Inicio</li>
+                <li class="nav-home-items" onclick="changePage('medicamentos')">Medicamentos</li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content">
+                        <a class="nav-home-items" onclick="changePage('link 1')">Link 1</a>
+                        <a class="nav-home-items" onclick="changePage('link 2')">Link 2</a>
+                        <a class="nav-home-items" onclick="changePage('link 3')">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="red-ball-up active">
+        <a title="Volver a arriba" href="#"><img
+                src="img/up-arrow-white.png"
+                alt="Boton ir arriba"></a>
+    </section>
+
+    <iframe src="pages/inicio.html" id="content-page">
+    </iframe>
+
+</body>
+
+
+<footer>
+    <div class="div-mapa">
+        <img src="img\mapa/Imagen1.png"
+            alt="Ubicacion de la farmacia">
+    </div>
+    <div class="footer-message">
+        <div class="footer-message-inner">
+            <div class="menu-menu-pie-de-pagina-es-container">
+                <ul id="menu-menu-pie-de-pagina-es" class="menu">
+                    <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29">
+                        <a
+                            href="pages/politica_de_privacidad.html">AVISO
+                            LEGAL Y TÉRMINOS DE
+                            USO</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <p>Copyright 2023</p>
+            <p>FarCuba Todos los derechos reservados</p>
+            <p>Diseñado y desarrollado por Christian Sarmiento</p>
+            <p><img loading="lazy" class="alignnone wp-image-6406"
+                    src="img\footer/img-footer.png"
+                    alt="imagen-bandera-cuba" width="131" height="60"></p>
+        </div>
+    </div>
+
+</footer>
+
+
+</html>
