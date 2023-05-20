@@ -227,7 +227,7 @@ li.dropdown {
 /* iFrame*/
 #content-page {
     width: 98%;
-    height: 1200px;
+    height: 3200px;
     border-style: none;
 }
 
@@ -309,15 +309,16 @@ li.dropdown {
     background-color: #E5E6FC;
     border-radius: 0px 20px 20px 0px;
     padding-right: 100px;
-    
+
 }
-.cont-derecha p{
+
+.cont-derecha p {
     font-size: 25px;
 }
 
 h1,
 h3 {
-    font-family: cursive;
+    font-family: serif;
     text-decoration: underline;
     text-align: center;
     color: black;
@@ -326,7 +327,7 @@ h3 {
 p {
 
     font-size: 20px;
-    font-family: cursive;
+    font-family: monospace;
     text-align: center;
 }
 
@@ -386,21 +387,25 @@ p {
     height: 100%;
 }
 
-/* carouusel*/
 
+/* carouusel*/
 .div-med-A {
     padding-top: 180px;
     color: black;
 
 }
 
-h1 {}
+/* test */
 
+.carousel-inner {
+    height: 250px;
+}
+
+/**/
 .div-med-B {
     color: red;
 
 }
-
 
 .carousel-item.active {
 
@@ -410,62 +415,91 @@ h1 {}
     padding-bottom: 40px;
 }
 
+.carousel-item {
+    text-align: center;
+}
 
-
-
-
-
-.hola {
+.item1 {
     width: 33%;
     margin-left: 5%;
     margin-right: 2.5%;
 }
 
-.holaa {
+.cont-item1 {
     background-color: #fffefe;
     margin-right: 0px;
-    padding-left: 50px;
+    /*padding-left: 50px;*/
+    padding-left: 0px;
     border-radius: 20px;
 }
 
-.holaa img,
-.byee img,
-.hii img {
+.holaaa {
+    float: left;
+    color: red;
+    margin-left: 10px;
+}
+
+.cont-item1 img {
     width: 60%;
+
+
 }
 
-.bye {
-    width: 33%;
+.valor-precio {
+    float: left;
+    color: red;
+    padding-left: 10px;
+
 }
 
-.byee {
-    background-color: #fffefe;
-    margin-right: 0px;
-    padding-left: 50px;
-    border-radius: 20px;
+.valor-precio p {
+    width: 8%
 }
 
-.hi {
-    width: 33%;
-    margin-right: 5%;
-    margin-left: 2.5%;
+.valor-cantidad {
+    float: right;
+    margin-right: 10px;
+
 }
 
-.hii {
-    border-radius: 20px;
-    background-color: #fffefe;
-    /* width: 90%; */
-    margin-right: 0px;
-    padding-left: 50px;
+.valor-cantidad p {
+    width: 50%;
 }
 
+.img-item1 {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+
+}
 
 .boton-medic {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 5px;
+
 }
 
 .boton-medic button {
-    width: 80%;
+    width: 100%;
 }
+
+/* test  desplazamiento bastante bueno*/
+.carousel-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item.active {
+    transform: translateX(0);
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    transform: translateX(100%);
+}
+
+/* */
