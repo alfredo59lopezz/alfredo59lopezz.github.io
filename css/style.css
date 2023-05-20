@@ -3,7 +3,7 @@ br {
 }
 
 body {
-    background-color: #001526;
+    background-color: #785252;
 }
 
 /* el logo*/
@@ -22,6 +22,7 @@ header {
     left: 0;
     background: #E5E6FC;
     z-index: 5;
+    margin-top: 1;
 }
 
 
@@ -102,184 +103,16 @@ li.dropdown {
     background-color: rgba(17, 17, 17, 0.575);
 }
 
+/*
 .active {
     background-color: red;
-}
+}*/
 
 /* ------ */
 
 
 
 /* body inicio*/
-.container {
-    width: 98%;
-    height: 50%;
-    margin-top: 50px;
-    position: absolute;
-    display: flex;
-    align-content: center;
-    right: 0px;
-    left: 110px;
-}
-.container img {
-   border-radius: 5px;
-}
-
-#new-medic {
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    margin-top: 10%;
-}
-
-.container3,
-.container2 {
-    padding-left: 50px;
-}
-
-/* Contactos*/ 
-.div-contacto-mediano {
-    background-color: white;
-    position: absolute;
-    display: flex;
-    margin-top:300px;
-    width: 92%;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 20px;
-    border-top-width: 20px;
-    padding-top: 20px;
-    padding-left: 40px;
-    border-right-width: 40px;
-    border-radius: 5px;
-
-}
-
-.div-contacto-iquierda {
-    width: 25%;
-    flex: 0 0 45%;
-    padding-right: 50px;
-
-}
-
-.div-contacto-iquierda h2 {
-    margin: 15px 0 70px;
-    font-size: 24px;
-    letter-spacing: 1.5px;
-}
-
-.contactos-box-item-icon {
-    float: left;
-}
-
-.div-contacto-derecho {
-    width: 60%;
-    padding-right: 50px;
-}
-
-.div-contacto-derecho p {
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin: 10px 0 15px;
-}
-
-/* contacto form*/
-.form-container .form-title,
-.form-container>p {
-    text-align: center;
-    font-family: "Montserrat", "sans-serif";
-}
-.form-container .form-title {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: 0.6px;
-    color: #81221c;
-}
-.form-container>p {
-    font-weight: 100px;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-.form-section .form-container form {
-    width: 40%;
-    float: left;
-}
-.contact-info {
-    width: 60%;
-    float: left;
-}
-
-.field {
-    padding: 0 45px;
-    margin-bottom: 20px;
-}
-
-.form-group{
-    width: 80%;
-}
-
-.was-validated{
-    padding-left: 100px;
-}
-
-
-.field label {
-    font-family: "Montserrat", "sans-serif";
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    color: #858585;
-    display: block;
-    font-weight: 400;
-    text-transform: none;
-}
-
-.field .label-error {
-    color: red;
-    display: none;
-}
-
-.field input,
-.field select,
-.field textarea {
-    font-family: "Montserrat", "sans-serif";
-    font-size: 14px;
-    height: 50px;
-    width: 80%;
-    background: none;
-    border: 1px solid #333;
-    border-radius: 0;
-}
-
-.field input,
-.field textarea {
-    padding: 0 10px;
-}
-
-.select-field {
-    padding-right: 25px;
-}
-
-.field textarea {
-    padding-top: 10px;
-}
-
-.form-submit {
-    float: right;
-    margin-right: 25px;
-
-}
-
-.button {
-    width: 210px;
-    height: 33px;
-    border: 5px solid #333;
-    padding: 15px;
-    text-align: center;
-}
-
-/*---form- */
 
 
 /* Boton ir arriba */
@@ -367,8 +200,8 @@ li.dropdown {
 }
 
 .div-mapa img {
-    width: 98%;
-    height: 700px;
+    width: 100%;
+    height: 500px;
 
 }
 
@@ -442,3 +275,197 @@ li.dropdown {
 
 /*---------*/
 
+/*seccion 1 */
+.inf-farmacia {
+    padding-top: 180px;
+    display: flex;
+    width: 100%;
+
+}
+
+.izq {
+    width: 50%;
+    background-color: #E5E6FC;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 50px;
+
+}
+
+.cont-izq {
+    width: 100%;
+    height: 100%;
+}
+
+.img-izq {
+    height: 95%;
+    width: 60%;
+    margin: 1% 25% 1% 15%;
+    border-radius: 20px;
+
+}
+
+.derecha {
+    width: 50%;
+    background-color: #E5E6FC;
+    border-radius: 0px 20px 20px 0px;
+    padding-right: 100px;
+    
+}
+.cont-derecha p{
+    font-size: 25px;
+}
+
+h1,
+h3 {
+    font-family: cursive;
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+}
+
+p {
+
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+}
+
+/*seccion 2*/
+
+.noticias {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.noticias h1 {
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.cont-noticias {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.news {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #E5E6FC;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.news-content {
+    width: 90%;
+
+}
+
+.new-img {
+    width: 10%;
+    height: 100%;
+}
+
+.news-img-content {
+    width: 100%;
+    height: 100%;
+}
+
+.img-noticia {
+    width: 40%;
+    height: 50%;
+    margin: 5% 10% 0% 20%;
+    border-radius: 5px;
+}
+
+.news-img {
+    width: 20%;
+    height: 100%;
+}
+
+/* carouusel*/
+
+.div-med-A {
+    padding-top: 180px;
+    color: black;
+
+}
+
+h1 {}
+
+.div-med-B {
+    color: red;
+
+}
+
+
+.carousel-item.active {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+.hola {
+    width: 33%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+}
+
+.holaa {
+    background-color: #fffefe;
+    margin-right: 0px;
+    padding-left: 50px;
+    border-radius: 20px;
+}
+
+.holaa img,
+.byee img,
+.hii img {
+    width: 60%;
+}
+
+.bye {
+    width: 33%;
+}
+
+.byee {
+    background-color: #fffefe;
+    margin-right: 0px;
+    padding-left: 50px;
+    border-radius: 20px;
+}
+
+.hi {
+    width: 33%;
+    margin-right: 5%;
+    margin-left: 2.5%;
+}
+
+.hii {
+    border-radius: 20px;
+    background-color: #fffefe;
+    /* width: 90%; */
+    margin-right: 0px;
+    padding-left: 50px;
+}
+
+
+.boton-medic {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 5px;
+}
+
+.boton-medic button {
+    width: 80%;
+}
