@@ -3,7 +3,7 @@ br {
 }
 
 body {
-    background-color: #785252;
+    background-color: #001526;
 }
 
 /* el logo*/
@@ -267,7 +267,7 @@ li.dropdown {
 .page-content-wrapper {
     position: absolute;
     z-index: 4;
-    background-image: linear-gradient(to bottom, #021638, #1b4792);
+    background-color: #001526;
     padding-left: 50px;
     padding-right: 50px;
     color: white;
@@ -389,6 +389,10 @@ p {
 
 
 /* carouusel*/
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: white;
+}
+
 .div-med-A {
     padding-top: 180px;
     color: black;
@@ -441,8 +445,6 @@ p {
 
 .cont-item1 img {
     width: 100%;
-
-
 }
 
 .valor-precio {
@@ -503,3 +505,154 @@ p {
 }
 
 /* */
+
+
+/* Contactos*/
+.div-contacto-mediano {
+    background-color: white;
+    position: absolute;
+    display: flex;
+    margin-top: 300px;
+    width: 92%;
+    margin-left: 65px;
+    margin-right: auto;
+    padding-bottom: 20px;
+    border-top-width: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    border-right-width: 40px;
+    border-radius: 5px;
+
+}
+
+.div-contacto-iquierda {
+    width: 25%;
+    flex: 0 0 45%;
+    padding-right: 50px;
+
+}
+
+.div-contacto-iquierda h2 {
+    margin: 15px 0 70px;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+
+.contactos-box-item-icon {
+    float: left;
+}
+
+.div-contacto-derecho {
+    width: 60%;
+    padding-right: 50px;
+}
+
+.div-contacto-derecho p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 10px 0 15px;
+}
+
+/* contacto form*/
+.form-container .form-title,
+.form-container>p {
+    text-align: center;
+    font-family: "Montserrat", "sans-serif";
+}
+
+.form-container .form-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    color: #81221c;
+}
+
+.form-container>p {
+    font-weight: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.form-section .form-container form {
+    width: 40%;
+    float: left;
+}
+
+.contact-info {
+    width: 60%;
+    float: left;
+}
+
+.field {
+    padding: 0 45px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 80%;
+}
+
+.was-validated {
+    padding-left: 100px;
+}
+
+
+.field label {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #858585;
+    display: block;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.field .label-error {
+    color: red;
+    display: none;
+}
+
+.field input,
+.field select,
+.field textarea {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 14px;
+    height: 50px;
+    width: 80%;
+    background: none;
+    border: 1px solid #333;
+    border-radius: 0;
+}
+
+.field input,
+.field textarea {
+    padding: 0 10px;
+}
+
+.select-field {
+    padding-right: 25px;
+}
+
+.field textarea {
+    padding-top: 10px;
+}
+
+.form-submit {
+    float: right;
+    margin-right: 25px;
+
+}
+
+.button {
+    width: 210px;
+    height: 33px;
+    border: 5px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*---form- */

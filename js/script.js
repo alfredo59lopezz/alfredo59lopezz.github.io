@@ -7,13 +7,13 @@ function changePage(page) {
         case 'medicamentos':
             contenido.setAttribute('src', "pages/medicamentos.html")
             break;
-        case 'link 1':
-            contenido.setAttribute('src', "pages/link_1.html")
+        case 'contactame':
+            contenido.setAttribute('src', "pages/contactame.html")
             break;
-        case 'link 2':
+        case 'mision':
             contenido.setAttribute('src', "pages/link_2.html")
             break;
-        case 'link 3':
+        case 'vision':
             contenido.setAttribute('src', "pages/link_3.html")
             break;
         case 'aviso':
