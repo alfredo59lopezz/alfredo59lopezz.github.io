@@ -13,7 +13,7 @@ body {
     margin-top: 10px;
 }
 
-
+/*header*/
 header {
     padding: 0px;
     position: fixed;
@@ -25,7 +25,7 @@ header {
     margin-top: 1;
 }
 
-
+/* el titulo Farmacia Pedroso*/
 .slogan {
     font-size: 25px;
     font-family: serif, sans-serif, monospace;
@@ -70,6 +70,13 @@ header {
     cursor: pointer;
 }
 
+.nav-home>ul>li:hover:not(.active) {
+    background-color: rgba(17, 17, 17, 0.575);
+}
+
+/**/
+
+/* dropdown es lo del menu q se despliega en 3 opciones*/
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
@@ -99,20 +106,7 @@ li.dropdown {
     display: inline-block;
 }
 
-.nav-home>ul>li:hover:not(.active) {
-    background-color: rgba(17, 17, 17, 0.575);
-}
-
-/*
-.active {
-    background-color: red;
-}*/
-
-/* ------ */
-
-
-
-/* body inicio*/
+/**/
 
 
 /* Boton ir arriba */
@@ -224,13 +218,12 @@ li.dropdown {
 
 /* ---- */
 
-/* iFrame*/
+/*ifrmae*/
 #content-page {
     width: 98%;
     height: 1600px;
     border-style: none;
 }
-
 
 /* pagina politica privacidad   */
 .body-privacidad {
@@ -275,12 +268,11 @@ li.dropdown {
 
 /*---------*/
 
-/*seccion 1 */
+/*seccion 1  informacio farmacia*/
 .inf-farmacia {
     padding-top: 180px;
     display: flex;
     width: 100%;
-
 }
 
 .izq {
@@ -331,7 +323,7 @@ p {
     text-align: center;
 }
 
-/*seccion 2*/
+/*seccion 2 las noticias*/
 
 .noticias {
     width: 100%;
@@ -388,7 +380,7 @@ p {
 }
 
 
-/* carouusel*/
+/* carrusel de medicamentos*/
 .carousel-dark .carousel-indicators [data-bs-target] {
     background-color: white;
 }
@@ -399,8 +391,7 @@ p {
 
 }
 
-/* test */
-
+/* para q el carrusel no se desplace hacia abajo y mueva el otro */
 .carousel-inner {
     height: 250px;
 }
@@ -412,7 +403,6 @@ p {
 }
 
 .carousel-item.active {
-
     display: flex;
     width: 100%;
     height: 100%;
@@ -469,28 +459,23 @@ p {
 }
 
 .img-item1 {
-
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
-
-
 }
 
 .boton-medic {
     margin-left: 5%;
     margin-right: 5%;
     padding: 5px;
-
 }
 
 .boton-medic button {
     width: 100%;
 }
 
-/* test  desplazamiento bastante bueno*/
+/* desplazamiento bastante bueno*/
 .carousel-item {
     transition: transform 0.3s ease-in-out;
 }
@@ -504,7 +489,7 @@ p {
     transform: translateX(100%);
 }
 
-/* */
+/* --------------------------*/
 
 
 /* Contactos*/
@@ -522,14 +507,12 @@ p {
     padding-left: 40px;
     border-right-width: 40px;
     border-radius: 5px;
-
 }
 
 .div-contacto-iquierda {
     width: 25%;
     flex: 0 0 45%;
     padding-right: 50px;
-
 }
 
 .div-contacto-iquierda h2 {
@@ -598,7 +581,6 @@ p {
     padding-left: 100px;
 }
 
-
 .field label {
     font-family: "Montserrat", "sans-serif";
     font-size: 14px;
@@ -653,6 +635,5 @@ p {
     padding: 15px;
     text-align: center;
 }
-
 
 /*---form- */
