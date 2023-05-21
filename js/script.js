@@ -34,8 +34,6 @@ document.addEventListener('keydown', function (event) {
 });
 
 
-
-
 /*La imagen se muestra con una resolucion especifica*/
 window.onload = function () {
     var images = document.getElementsByClassName("myImage");
@@ -45,8 +43,6 @@ window.onload = function () {
         };
     }
 };
-
-
 
 /*tomar nombre de la imagen y automaticamente mostrarlo en el texto del button en letra mayuscula-*/
 window.onload = function () {
@@ -67,6 +63,39 @@ function obtenerNombreMedicamento(urlImagen) {
 }
 /* ---- */
 
+
+// Smooth Scroll  no se si esta funcionando
+const links = document.querySelectorAll('a[href^="#"]');
+
+for (const link of links) {
+  link.addEventListener('click', smoothScroll);
+}
+
+function smoothScroll(event) {
+  event.preventDefault();
+  const targetId = this.getAttribute('href');
+  document.querySelector(targetId).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+}
+
+
+
+/* test*/
+const fadeElements = document.querySelectorAll('.div-contacto-mediano');
+
+function fadeInElements() {
+  for (const element of fadeElements) {
+    const elementPosition = element.getBoundingClientRect().top;
+    if (elementPosition < window.innerHeight - 100) {
+      element.classList.add('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', fadeInElements);
+window.addEventListener('load', fadeInElements);
 
 
 

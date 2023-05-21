@@ -4,7 +4,10 @@ br {
 
 body {
     background-color: #001526;
+   
 }
+
+
 
 /* el logo*/
 .logo img {
@@ -688,3 +691,25 @@ p {
     width: 140px;
     height: 140px;
 }
+
+/* animacion al boton de los medicamentos*/
+.btn-primary{
+    transition: background-color 2.3s ease;
+}
+.btn-primary:hover{
+    background-color: red;
+}/**/
+
+
+/* animacio scrool test*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .div-contacto-mediano.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
