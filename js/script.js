@@ -16,16 +16,12 @@ function changePage(page) {
         case 'vision':
             contenido.setAttribute('src', "pages/link_3.html")
             break;
-        case 'aviso':
-            contenido.setAttribute('src', "pages/politica_de_privacidad.html")
-            break;
-
-
         default:
             contenido.setAttribute('src', "pages/inicio.html")
             break;
     }
 }
+
 
 /* function back space */
 document.addEventListener('keydown', function (event) {
@@ -37,6 +33,39 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+
+
+
+/*La imagen se muestra con una resolucion especifica*/
+window.onload = function () {
+    var images = document.getElementsByClassName("myImage");
+    for (var i = 0; i < images.length; i++) {
+        images[i].onload = function () {
+            console.log("La imagen se ha cargado correctamente.");
+        };
+    }
+};
+
+
+
+/*tomar nombre de la imagen y automaticamente mostrarlo en el texto del button en letra mayuscula-*/
+window.onload = function () {
+    var botones = document.querySelectorAll(".boton-medic button");
+
+    botones.forEach(function (boton) {
+        var img = boton.parentNode.previousElementSibling.querySelector("img");
+        var nombreMedicamento = obtenerNombreMedicamento(img.src);
+        boton.innerText = nombreMedicamento;
+    });
+};
+
+function obtenerNombreMedicamento(urlImagen) {
+    var nombreArchivo = urlImagen.substring(urlImagen.lastIndexOf("/") + 1); // Obtener solo el nombre del archivo con la extensión
+    var nombreSinExtension = nombreArchivo.substring(0, nombreArchivo.lastIndexOf(".")); // Eliminar la extensión del nombre del archivo
+    var nombreMedicamento = nombreSinExtension.toUpperCase(); // Convertir el nombre a mayúsculas si es necesario --- .toLowerCase (minusucla)
+    return nombreMedicamento;
+}
+/* ---- */
 
 
 

@@ -233,6 +233,7 @@ li.dropdown {
     line-height: 1.2;
 }
 
+
 .post-content-inner {
     background-color: white;
     column-width: 269px;
@@ -319,8 +320,8 @@ h3 {
 p {
 
     font-size: 20px;
-    font-family: monospace;
-    text-align: center;
+    /*font-family: monospace;
+    text-align: center;*/
 }
 
 /*seccion 2 las noticias*/
@@ -433,10 +434,6 @@ p {
     margin-left: 10px;
 }
 
-.cont-item1 img {
-    width: 100%;
-}
-
 .valor-precio {
     float: left;
     color: red;
@@ -509,10 +506,10 @@ p {
     border-radius: 5px;
 }
 
-.div-contacto-iquierda {
-    width: 25%;
-    flex: 0 0 45%;
-    padding-right: 50px;
+.div-contacto-izquierda {
+
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .div-contacto-iquierda h2 {
@@ -636,4 +633,58 @@ p {
     text-align: center;
 }
 
+/* contactame */
+
+
+.red-telegram img,
+.red-whatsapp img {
+    height: 50px;
+    width: 50px;
+}
+
+.enlace-red-social {
+    align-content: center;
+    display: grid;
+    margin-left: 5px;
+    display: grid;
+    align-content: center;
+}
+
+.enlace-red-social a,
+.contactos-box-item-content a,
+.div-contacto-derecha center {
+    font-size: 20px;
+}
+
+.div-contacto-derecha center {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.div-contacto-derecha h2 {
+    font-size: 30px;
+}
+
+.red-telegram,
+.red-whatsapp {
+    display: flex;
+}
+
+.form-control {
+    font-size: 20px;
+}
+
+.form-check-label,
+.form-group label, .btn {
+    font-size: 15px;
+}
+
+/* -----*/
+
 /*---form- */
+
+/* resolucion de las imagenes de los medicamentos*/
+.img-item1 img {
+    width: 140px;
+    height: 140px;
+}
