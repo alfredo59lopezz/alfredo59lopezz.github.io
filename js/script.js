@@ -13,9 +13,6 @@ function changePage(page) {
         case 'indice':
             contenido.setAttribute('src', "pages/indice_medicamentos.html")
             break;
-        case 'vision':
-            contenido.setAttribute('src', "pages/link_3.html")
-            break;
         default:
             contenido.setAttribute('src', "pages/inicio.html")
             break;
