@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gestion de medicamentos en la farmacia Pedroso">
+    <meta name="kewwords" content="farmacia,medicamentos,gestion">
+    <title>Farmacia "Pedroso"</title>
+
+    <link rel="stylesheet" href="../lib\bootstrap\bootstrap.min.css">
+    <script src="../lib\bootstrap\bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+
+    <!--boostrap de w3schools-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--lo pone asi el ejemplo de boostrap abelito-->
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body style="background-color: white;">
+
+    <div class="Filterable Table" style="margin-top: 150px;">
+        <h2>Filterable Table</h2>
+        <div class="barra_busqueda">
+            <div>
+                <img style="width: 20px; height:20px" src="../img/iconos/lupa.jpg" alt="lupa de busqueda">
+            </div>
+            <div style="
+            margin-left: 3px;
+        ">
+                <input style="
+                border: none;" id="myInput" type="text" placeholder="Buscar..">
+            </div>
+        </div>
+
+        <br><br>
+    </div>
+    <div>
+        <h2 style="text-align: left;">A</h2>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre_Medicamento</th>
+                <th>Detalles</th>
+                <th>Indicaciones</th>
+                <th>Contraindicaciones</th>
+                <th>Reacciones adversas</th>
+                <th>Tratamiento de sobredosis</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr>
+                <td>ACICLOVIR </td>
+                <td>tableta 200mg (20tab/10tabxblister)</td>
+                <td>infecciones por virus del herpes simple</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AMIODARONA</td>
+                <td>tableta 200mg (frasco 30tab)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AMOXICILINA</td>
+                <td>cápsula 500mg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ATENOLOL</td>
+                <td>tableta 25mg/100mg (frasco 60 tab)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AZITROMICINA
+                <td>tableta 500mg (blister 3 tab)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AZUL_METILENO </td>
+                <td>ampolleta 200mg/20ml</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>B</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>BISACODILO</td>
+                <td>tableta revestida 5mg (10 tab)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>C</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CARBAMAZEPINA</td>
+                <td>tableta 200mg</td>
+                <td></td>
+                <td></td>
+                <td> </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CAPTOPRIL </td>
+                <td>tableta 25mg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CAPTOPRIL </td>
+                <td>tableta 50mg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CEFALEXINA</td>
+                <td>cápsula 500mg (20cap /12cap x blíster)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CICLOFOSFAMIDA</td>
+                <td>bulbo 200mg /1g</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CIMETIDINA
+                <td>tableta 200mg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CIPROFLOXACINA </td>
+                <td>bulbo 200mg/100ml</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Fin de la lista</h3>
+</body>
+
+</html>

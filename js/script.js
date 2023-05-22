@@ -10,8 +10,8 @@ function changePage(page) {
         case 'contactame':
             contenido.setAttribute('src', "pages/contactame.html")
             break;
-        case 'mision':
-            contenido.setAttribute('src', "pages/link_2.html")
+        case 'indice':
+            contenido.setAttribute('src', "pages/indice_medicamentos.html")
             break;
         case 'vision':
             contenido.setAttribute('src', "pages/link_3.html")
@@ -102,10 +102,6 @@ function descargarDocumento3() {
     link.download = "mision.docx";
     link.click();
 }
-
-
-
-
 
 
 
