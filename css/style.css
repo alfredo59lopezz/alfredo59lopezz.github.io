@@ -159,7 +159,31 @@ li.dropdown {
     align-items: center;
     z-index: 10;
     text-align: center;
+    transition: transform 0.3s ease;
+
+    animation-name: rotateAnimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
+/* para q se mantenga moviendose el icono*/
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* de vueltas 360 grados
+.red-ball-up:hover,
+.red-ball:hover {
+    transform: rotate(360deg);
+}*/
+
 
 .red-ball-up:hover,
 .red-ball:hover {
@@ -694,8 +718,6 @@ p {
 }
 
 /* contactame */
-
-
 .red-social img {
     height: 50px;
     width: 50px;
@@ -757,8 +779,8 @@ p {
 
 /* resolucion de las imagenes de los medicamentos*/
 .img-item1 img {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
 }
 
 /* animacion al boton de los medicamentos*/
@@ -800,5 +822,5 @@ td {
     align-items: center;
     display: inline-flex;
     border: 3px solid;
-    
+
 }

@@ -46,7 +46,7 @@
 
                 </div>
                 <div class="enlace-red-social">
-                    <div class="red-social" >
+                    <div class="red-social">
 
                         <div>
                             <button onclick="openTelegram()"><img src="../img/iconos/telegram.jpg" alt=""></button>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
 
-                    <div class="red-social" >
+                    <div class="red-social">
 
                         <div>
                             <button onclick="openWhatsApp()"><img src="../img/iconos/whatsapp.jpg" alt=""></button>
@@ -62,7 +62,7 @@
 
                     </div>
 
-                    <div class="red-social" >
+                    <div class="red-social">
 
                         <div>
                             <button onclick="openFacebook()"><img src="../img/iconos/facebook.jpg" alt=""></button>
@@ -70,7 +70,7 @@
 
                     </div>
 
-                    <div class="red-social" >
+                    <div class="red-social">
 
                         <div>
                             <button onclick="openFacebook()"><img src="../img/iconos/twitter.jpg" alt=""></button>
@@ -99,22 +99,24 @@
                         enctype="text/plain">
                         <div class="form-group">
                             <label for="uname">Nombre/Apellidos:</label>
-                            <input type="text" class="form-control" id="uname" placeholder="Enter nombre y apellidos"
-                                name="YourName" required>
-                            <div class="valid-feedback">Valid.</div>
+                            <input type="text" class="form-control" id="uname" pattern="[A-Za-z ]+"
+                                title="Ingrese solo letras" placeholder="Escriba su nombre y apellidos" name="YourName"
+                                required>
+
 
                         </div>
 
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" name="email" required id="em"
-                                placeholder="Escriba su email">
-                            <div class="valid-feedback">Valid.</div>
+                            <label>Correo:</label>
+                            <input type="email" class="form-control" id="em" name="email" placeholder="Escriba su correo"
+                                pattern="[A-Za-z0-9._%+-]+@(gmail\.com|nauta\.cu|hotmail\.es)"
+                                title="Ingrese un correo válido" required><br>
+
                         </div>
                         <div class="form-group">
                             <label>Pregunta/Comentario</label>
-                            <textarea name="mensaje" class="form-control" required rows="3"
-                                placeholder="Escriba el mensaje" id="pregcomentatio"></textarea>
+                            <textarea name="mensaje" pattern="[A-Za-z0-9\s]+" title="Ingrese solo letras y números" class="form-control" required rows="3"
+                                placeholder="Mensaje....." id="pregcomentatio" maxlength="1000"></textarea>
                         </div>
                         <div class="form-group form-check">
                             <label class="form-check-label">
@@ -123,7 +125,7 @@
                                 <div class="valid-feedback">Valid.</div>
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
             </div>

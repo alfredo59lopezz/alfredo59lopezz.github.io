@@ -22,7 +22,7 @@ function changePage(page) {
 
 /* function back space */
 document.addEventListener('keydown', function (event) {
-    if (event.key === "Backspace") 
+    if (event.key === "Backspace") {
         if (event.target.tagName !== "INPUT" && event.target.tagName !== "TEXTAREA") {
             event.preventDefault();
             window.history.back();
@@ -66,7 +66,7 @@ function openWhatsApp() {
 }
 
 function openTelegram() {
-    var  url  =  "https://t.me/christi_a_n" ;
+    var url = "https://t.me/christi_a_n";
     window.open(url, "_blank");
 }
 
@@ -99,6 +99,9 @@ function descargarDocumento3() {
     link.download = "mision.docx";
     link.click();
 }
+
+
+/* indice medicamentos - barra busqueda*/
 
 
 
