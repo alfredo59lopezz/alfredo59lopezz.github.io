@@ -63,41 +63,45 @@ function obtenerNombreMedicamento(urlImagen) {
 }
 /* ---- */
 
-
-// Smooth Scroll  no se si esta funcionando
-const links = document.querySelectorAll('a[href^="#"]');
-
-for (const link of links) {
-  link.addEventListener('click', smoothScroll);
+function openWhatsApp() {
+    var url = "https://api.whatsapp.com/send?phone=56470807";
+    window.open(url, "_blank");
 }
 
-function smoothScroll(event) {
-  event.preventDefault();
-  const targetId = this.getAttribute('href');
-  document.querySelector(targetId).scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-  });
+function openTelegram() {
+    var url = "https://t.me/christ_i_a_n";
+    window.open(url, "_blank");
 }
 
+/*
+function openFacebook() {
+    var url = "#";
+    window.open(url, "_blank");
+}
+function openTwitter() {
+    var url = "#";
+    window.open(url, "_blank");
+}*/
 
-
-/* test*/
-const fadeElements = document.querySelectorAll('.div-contacto-mediano');
-
-function fadeInElements() {
-  for (const element of fadeElements) {
-    const elementPosition = element.getBoundingClientRect().top;
-    if (elementPosition < window.innerHeight - 100) {
-      element.classList.add('active');
-    }
-  }
+function descargarDocumento1() {
+    var link = document.createElement("a");
+    link.href = "../doc/politica_de_privacidad.docx";
+    link.download = "politica_de_privacidad.docx";
+    link.click();
 }
 
-window.addEventListener('scroll', fadeInElements);
-window.addEventListener('load', fadeInElements);
-
-
+function descargarDocumento2() {
+    var link = document.createElement("a");
+    link.href = "../doc/objetivo_social.docx";
+    link.download = "objetivo_social.docx";
+    link.click();
+}
+function descargarDocumento3() {
+    var link = document.createElement("a");
+    link.href = "../doc/mision.docx";
+    link.download = "mision.docx";
+    link.click();
+}
 
 
 

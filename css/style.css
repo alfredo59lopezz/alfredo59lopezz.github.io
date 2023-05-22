@@ -4,7 +4,7 @@ br {
 
 body {
     background-color: #001526;
-   
+
 }
 
 
@@ -38,7 +38,42 @@ header {
     margin-left: 1%;
     margin-top: 1.5%;
     color: #333;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
 }
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/**/
+
+.cont-noticias p,
+h1,
+h2,
+h3,
+.cont-derecha p {
+    opacity: 0;
+    animation: fade-in 1s forwards;
+}
+
+@keyframes h1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* barra de navegacion */
 .nav-home {
@@ -292,6 +327,11 @@ li.dropdown {
     height: 100%;
 }
 
+.cont-izq:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out 0.2s;
+}
+
 .img-izq {
     height: 95%;
     width: 60%;
@@ -358,7 +398,11 @@ p {
 
 .news-content {
     width: 90%;
+}
 
+.news-content h3:hover,
+.menu a:hover {
+    color: blue;
 }
 
 .new-img {
@@ -370,6 +414,19 @@ p {
     width: 100%;
     height: 100%;
 }
+
+.news-img-content img {
+    width: 92px;
+    height: 92px;
+}
+
+
+
+.news-img-content:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out 0.2s;
+}
+
 
 .img-noticia {
     width: 40%;
@@ -639,18 +696,35 @@ p {
 /* contactame */
 
 
-.red-telegram img,
-.red-whatsapp img {
+.red-social img {
     height: 50px;
     width: 50px;
+
+}
+
+.red-social:hover {
+    transform: scale(1.25);
+    transition: transform 1s ease-in-out 0.2s;
 }
 
 .enlace-red-social {
-    align-content: center;
-    display: grid;
+    display: flex;
     margin-left: 5px;
-    display: grid;
-    align-content: center;
+    border-style: none;
+
+}
+
+.enlace-red-social button {
+    border-style: none;
+    padding-top: 14px;
+    padding-left: 14px;
+    background-color: white;
+
+}
+
+.red-social button {
+    border-style: none;
+    background-color: white;
 }
 
 .enlace-red-social a,
@@ -668,18 +742,13 @@ p {
     font-size: 30px;
 }
 
-.red-telegram,
-.red-whatsapp {
-    display: flex;
-}
 
-.form-control {
-    font-size: 20px;
-}
 
 .form-check-label,
-.form-group label, .btn {
-    font-size: 15px;
+.form-group label,
+.btn,
+.form-control {
+    font-size: 20px;
 }
 
 /* -----*/
@@ -693,23 +762,12 @@ p {
 }
 
 /* animacion al boton de los medicamentos*/
-.btn-primary{
+.btn-primary {
     transition: background-color 2.3s ease;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: red;
-}/**/
+}
 
-
-/* animacio scrool test*/
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .div-contacto-mediano.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+/**/
