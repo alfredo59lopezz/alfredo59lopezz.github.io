@@ -101,7 +101,7 @@ function descargarDocumento3() {
 }
 
 
-/* indice medicamentos - barra busqueda*/
+
 
 
 
