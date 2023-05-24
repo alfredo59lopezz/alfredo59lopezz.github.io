@@ -7,40 +7,49 @@
     <meta name="kewwords" content="farmacia,medicamentos,gestion">
     <title>Farmacia "Pedroso"</title>
 
+    <!--profe-->
     <link rel="stylesheet" href="../lib\bootstrap\bootstrap.min.css">
     <script src="../lib\bootstrap\bootstrap.bundle.min.js"></script>
 
+
+
+    <!--boostrap de w3schools-->
+    <link rel="stylesheet" href="../lib/boostrap w2schools/bootstrap.min.css">
+    <script src="../lib/boostrap w2schools/jquery.min.js"></script>
+    <script src="../lib/boostrap w2schools/bootstrap.min.js"></script>
+    <!--mio-->
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js"></script>
 
+    <!--la de abelito-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-        
-              // Store hash
-              var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-           
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
         });
-        </script>
+    </script>
 </head>
 
 <body>
@@ -94,7 +103,9 @@
                                 directivos de ese
                                 grupo
                                 y sus empresas comparecerán este miércoles en la...</p>
-                            <p><center>4 mayo 2023</center></p>
+                            <p>
+                                <center>4 mayo 2023</center>
+                            </p>
                         </div>
                         <div class="news-img">
                             <div class="news-img-content">
@@ -105,14 +116,16 @@
 
                     <div class="news">
                         <div class="news-content">
-                            <a
-                                href="https://www.14ymedio.com/cuba/noticias-farmacias-cubanas-medicamentos-prometidos_0_3356664303.html"  target="_blank">
+                            <a href="https://www.14ymedio.com/cuba/noticias-farmacias-cubanas-medicamentos-prometidos_0_3356664303.html"
+                                target="_blank">
                                 <h3>Sin noticias en las farmacias cubanas de los medicamentos prometidos para finales de
                                     julio</h3>
                             </a>
                             <p>Las autoridades afirmaron que para estas fechas debían estar disponibles algunos fármacos
                                 cuya producción se retomó recientemente....</p>
-                            <p> <center>15 mayo 2023</center> </p>
+                            <p>
+                                <center>15 mayo 2023</center>
+                            </p>
                         </div>
                         <div class="news-img">
                             <div class="news-img-content">
@@ -123,15 +136,17 @@
 
                     <div class="news">
                         <div class="news-content">
-                            <a
-                                href="https://www.prensa-latina.cu/2023/05/09/preven-cierre-de-farmacias-en-reino-unido-por-falta-de-financiamiento"  target="_blank">
+                            <a href="https://www.prensa-latina.cu/2023/05/09/preven-cierre-de-farmacias-en-reino-unido-por-falta-de-financiamiento"
+                                target="_blank">
                                 <h3>Prevén cierre de farmacias en Reino Unido por falta de financiamiento</h3>
                             </a>
 
                             <p>Líderes de la industria farmacéutica en Reino Unido advirtieron hoy sobre la posibilidad
                                 de
                                 cierre de los...</p>
-                            <p> <center>10 mayo 2023</center> </p>
+                            <p>
+                                <center>10 mayo 2023</center>
+                            </p>
                         </div>
                         <div class="news-img">
                             <div class="news-img-content">
@@ -144,6 +159,45 @@
 
             </div>
         </article>
+    </section>
+
+    <section class="section3">
+        <article>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+
     </section>
 
 </body>

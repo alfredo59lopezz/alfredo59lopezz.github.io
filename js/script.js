@@ -1,6 +1,9 @@
 function changePage(page) {
     contenido = document.getElementById("content-page");
     switch (page) {
+        case 'autentificacion':
+            contenido.setAttribute('src', "pages/autentificacion.html")
+            break;
         case 'inicio':
             contenido.setAttribute('src', "pages/inicio.html")
             break;

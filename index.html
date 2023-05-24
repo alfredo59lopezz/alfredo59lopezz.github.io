@@ -8,11 +8,17 @@
     <title>Farmacia "Pedroso"</title>
     <link rel="icon" href="img\iconos/logoo.ico">
 
+    <!--boostrap de w3schools-->
+    <link rel="stylesheet" href="../lib/boostrap w2schools/bootstrap.min.css">
+    <script src="../lib/boostrap w2schools/jquery.min.js"></script>
+    <script src="../lib/boostrap w2schools/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 
     <script src="../lib/ajax/jquery.min.js.js"></script>
 
+    
 
 </head>
 
@@ -26,6 +32,7 @@
         </a>
         <nav class="nav-home">
             <ul>
+                <li id="loginButton" style="text-decoration: underline;" class="nav-home-items" onclick="changePage('autentificacion')">Acceder</li>
                 <li class="nav-home-items" onclick="changePage('inicio')">Inicio</li>
                 <li class="nav-home-items" onclick="changePage('medicamentos')">Medicamentos</li>
                 <li class="dropdown">
@@ -33,23 +40,21 @@
                     <div class="dropdown-content">
                         <a class="nav-home-items" onclick="changePage('contactame')">Contactame</a>
                         <a class="nav-home-items" onclick="changePage('indice')">Indice_Medic</a>
-                        
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
 
-
     <section class="red-ball-up active">
-        <a style="scroll-behavior: smooth;" class="red-ball-uup" title="Volver a arriba" href="#"><img src="img/up-arrow-white.png" alt="Boton ir arriba"></a>
+        <a style="scroll-behavior: smooth;" class="red-ball-uup" title="Volver a arriba" href="#"><img
+                src="img/up-arrow-white.png" alt="Boton ir arriba"></a>
     </section>
 
     <iframe src="pages/inicio.html" id="content-page">
     </iframe>
 
 </body>
-
 
 <footer>
 
@@ -72,7 +77,7 @@
                         <a href="pages/mision.html" style="font-size: 18px;">Misión</a>
                     </li>
                 </ul>
-            </div>
+            </div>    
             <p>Copyright 2023</p>
             <p>FarCuba Todos los derechos reservados</p>
             <p>Diseñado y desarrollado por Christian Sarmiento</p>

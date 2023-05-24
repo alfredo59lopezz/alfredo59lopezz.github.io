@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gestion de medicamentos en la farmacia Pedroso">
+    <meta name="kewwords" content="farmacia,medicamentos,gestion">
+    <title>Página de autenticación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 150px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Inicio de sesión</h2>
+        <form>
+            <input type="text" placeholder="Nombre de usuario" required>
+            <input type="password" placeholder="Contraseña" required>
+            <input type="submit" value="Iniciar sesión">
+        </form>
+    </div>
+
+
+    <script>
+        const form = document.getElementById('loginForm');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const storedUser = JSON.parse(localStorage.getItem('user'));
+            const username = form.username.value;
+            const password = form.password.value;
+
+            if (storedUser && storedUser.username === username && storedUser.password === password) {
+                alert('¡Inicio de sesión exitoso!');
+                form.reset();
+            } else {
+                alert('Nombre de usuario o contraseña incorrectos.');
+            }
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
