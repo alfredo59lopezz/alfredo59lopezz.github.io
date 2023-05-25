@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" >
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 
     <!--boostrap de w3schools-->
     <script src="../lib/ajax/jquery.min.js.js"></script>
-    <!--lo pone asi el ejemplo de boostrap abelito-->
+    <!--lo pone asi el ejemplo de boostrap abelito  para validar la busquda-->
     <script>
         $(document).ready(function () {
             $("#myInput").on("keyup", function () {
@@ -30,19 +30,16 @@
 
 </head>
 
-<body style="background-color: white;">
+<body style="background-color: white;" >
 
     <div class="Filterable Table" style="margin-top: 150px;">
-        <h2>Filterable Table</h2>
+       
         <div class="barra_busqueda">
-            <div>
+            <div id="lupa-busquda">
                 <img style="width: 20px; height:20px" src="../img/iconos/lupa.jpg" alt="lupa de busqueda">
             </div>
-            <div style="
-            margin-left: 3px;
-        ">
-                <input style="
-                border: none;" id="myInput" type="text" placeholder="Buscar..">
+            <div  id="div-myInput" >
+                <input id="myInput" type="text" placeholder="Buscar..">
             </div>
         </div>
 

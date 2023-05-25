@@ -2,6 +2,7 @@ br {
     clear: both;
 }
 
+
 body {
     background-color: #001526;
 
@@ -15,7 +16,8 @@ body {
     float: left;
     margin-top: 10px;
     background-color: red;
-    transition: transform 0.3s ease; /* prop necesaria para eso*/
+    transition: transform 0.3s ease;
+    /* prop necesaria para eso*/
 }
 
 /* de vueltas 360 grados*/
@@ -173,7 +175,8 @@ li.dropdown {
     text-align: center;
     transition: transform 0.3s ease;
 
-    animation-name: rotateAnimation; /* estas 4 prop son necesarias para eso*/
+    animation-name: rotateAnimation;
+    /* estas 4 prop son necesarias para eso*/
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -291,9 +294,12 @@ li.dropdown {
 /*ifrmae*/
 #content-page {
     width: 100%;
-    height: 2500px;
+    height: 1600px;
     border-style: none;
+    margin-bottom: 10px;
 }
+
+
 
 /* pagina politica privacidad   */
 .body-privacidad {
@@ -820,41 +826,98 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-table,
-th,
-td {
-    border: 5px solid #001526;
-}
-
 .barra_busqueda {
     align-items: center;
     display: inline-flex;
-    border: 3px solid;
+    border: 2px solid;
+    margin-left: 5px;
 
 }
 
+#lupa-busqueda {
+    width: 20px;
+    height: 20px;
+}
+#div-myInput{
+  margin-left: 3px;
+}
 
-
-
+#myInput {
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 20px;
+    border-color: rgb(255, 255, 255);
+}
 
 /* Estilo para la barra de desplazamiento */
 ::-webkit-scrollbar {
-    width: 10px; /* Ancho de la barra de desplazamiento */
-  }
-  
-  /* Estilo para el track (fondo) de la barra de desplazamiento */
-  ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Color de fondo del track */
-  }
-  
-  /* Estilo para el thumb (manija) de la barra de desplazamiento */
-  ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color del thumb */
-    border-radius: 5px; /* Bordes redondeados del thumb */
-  }
-  
-  /* Estilo cuando el thumb es activo (haciendo click sobre él) */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Color del thumb en estado hover */
-  }
-  
+    width: 10px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el track (fondo) de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Color de fondo del track */
+}
+
+/* Estilo para el thumb (manija) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color del thumb */
+    border-radius: 5px;
+    /* Bordes redondeados del thumb */
+}
+
+/* Estilo cuando el thumb es activo (haciendo click sobre él) */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Color del thumb en estado hover */
+}
+
+/* autentificacion*/
+#body-autenticacion {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container-auten {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/**/
