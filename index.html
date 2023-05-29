@@ -10,14 +10,13 @@
     <title>Farmacia "Pedroso"</title>
     <link rel="icon" href="img\iconos/logoo.ico">
 
-    <!--boostrap de w3schools-->
-    <link rel="stylesheet" href="../lib/boostrap w2schools/bootstrap.min.css">
-    <script src="../lib/boostrap w2schools/jquery.min.js"></script>
-    <script src="../lib/boostrap w2schools/bootstrap.min.js"></script>
+    <!--lib boostrap-->
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
 
+    <!--lib personal-->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
-
 
 </head>
 
@@ -29,7 +28,7 @@
         </div>
         <h1 class="slogan">Farmacia "Pedroso"</h1>
         </a>
-        <nav class="nav-home">
+        <!--<nav class="nav-home">
             <ul>
                 <li id="loginButton" style="text-decoration: underline;" class="nav-home-items"
                     onclick="changePage('autentificacion')">Acceder</li>
@@ -45,7 +44,34 @@
                 </li>
 
             </ul>
-        </nav>
+        </nav>-->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link nav-home-items" id="loginButton" aria-current="page"
+                    onclick="changePage('autentificacion')">Acceder</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-home-items" aria-current="page" onclick="changePage('inicio')">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-home-items" id="loginButton" aria-current="page"
+                onclick="changePage('medicamentos')">Medicamentos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-home-items" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Acerca de</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item nav-home-items" onclick="changePage('contactame')">Contactame</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item nav-home-items" onclick="changePage('indice')">Indice</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+
     </header>
 
     <section class="red-ball-up active">
