@@ -15,7 +15,8 @@ body {
     width: 70px;
     float: left;
     margin-top: 10px;
-    background-color: red;
+    box-shadow: 2px 4px 15px 0 #000;
+    border-radius: 10px;
     transition: transform 0.3s ease;
     /* prop necesaria para eso*/
 }
@@ -211,6 +212,7 @@ li.dropdown {
 .red-ball.red-ball-up.active {
     visibility: visible;
     opacity: 1;
+    box-shadow: 0px 0px 8px 0 #fff
 }
 
 .red-ball-up a,
@@ -262,13 +264,14 @@ li.dropdown {
 /* footer */
 .div-mapa {
     margin-bottom: 0px;
-    border: 2px solid red;
     border-radius: 5px;
 }
 
 .div-mapa img {
     width: 100%;
     height: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px 0 white;
 
 }
 
@@ -278,7 +281,8 @@ li.dropdown {
     font-size: 14px;
     padding: 56px 0px 20px;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 2px solid #ede7e7;
 }
 
 #menu-item-29 {
@@ -375,6 +379,7 @@ li.dropdown {
     width: 60%;
     margin: 1% 25% 1% 15%;
     border-radius: 20px;
+    box-shadow: 2px 4px 15px 0 #000;
 
 }
 
@@ -416,6 +421,7 @@ p {
 .noticias h1 {
     padding-bottom: 50px;
     padding-top: 10px;
+    text-shadow: 2px 2px 5px red, 2px 2px 5px red;
 }
 
 .cont-noticias {
@@ -456,6 +462,8 @@ p {
 .news-img-content img {
     width: 92px;
     height: 92px;
+    box-shadow: 2px 4px 15px 0 #000;
+    border-radius: 10px;
 }
 
 
@@ -524,6 +532,7 @@ p {
     /*padding-left: 50px;*/
     padding-left: 0px;
     border-radius: 20px;
+    box-shadow: 2px 4px 15px 0 blue;
 }
 
 .holaaa {
@@ -601,7 +610,8 @@ p {
     padding-top: 20px;
     padding-left: 40px;
     border-right-width: 40px;
-    border-radius: 5px;
+    border-radius: 25px;
+    box-shadow: 10px 20px 10px 5px black;
 }
 
 .div-contacto-izquierda {
@@ -795,6 +805,13 @@ p {
 .img-item1 img {
     width: 110px;
     height: 110px;
+    box-shadow: 2px 4px 15px 0 #000;
+    border-radius: 10px;
+}
+
+.btn {
+    box-shadow: 2px 4px 15px 0 #000;
+    border-radius: 10px;
 }
 
 /* animacion al boton de los medicamentos*/
@@ -813,6 +830,25 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    background-color: #9da0a3;
+}
+
+table th,
+table td {
+    border: 2px solid red;
+}
+
+#fin {
+    color: white;
+}
+
+.Filterable {
+    margin-top: 150px;
+    background-color: white;
+    width: 20%;
+    align-items: center;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
 }
 
 td,
@@ -830,7 +866,8 @@ tr:nth-child(even) {
     align-items: center;
     display: inline-flex;
     border: 2px solid;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
+    border-radius: 20px;
 
 }
 
@@ -838,8 +875,9 @@ tr:nth-child(even) {
     width: 20px;
     height: 20px;
 }
-#div-myInput{
-  margin-left: 3px;
+
+#div-myInput {
+    margin-left: 3px;
 }
 
 #myInput {
@@ -847,6 +885,7 @@ tr:nth-child(even) {
     margin-bottom: 0px;
     font-size: 20px;
     border-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
 /* Estilo para la barra de desplazamiento */
@@ -878,7 +917,7 @@ tr:nth-child(even) {
 /* autentificacion*/
 #body-autenticacion {
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
+
 }
 
 .container-auten {
@@ -889,6 +928,7 @@ tr:nth-child(even) {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
 }
 
 h2 {
